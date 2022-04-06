@@ -8,6 +8,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var ElephantRouter = require('./routes/Elephant');
 var addModsRouter = require('./routes/addmods');
+var selectorouter = require('./routes/selector');
 
 var app = express();
 
@@ -25,6 +26,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/Elephant', ElephantRouter);
 app.use('/addMods', addModsRouter);
+app.use('/selector', selectorouter);
 
 
 // catch 404 and forward to error handler
